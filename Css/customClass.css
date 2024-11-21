@@ -612,6 +612,10 @@ input[type="checkbox"]:focus {
     margin-top: 50px;
 }
 
+.my-mt-65 {
+    margin-top: 65px;
+}
+
 .my-mt-100 {
     margin-top: 100px;
 }

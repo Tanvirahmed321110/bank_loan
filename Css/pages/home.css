@@ -128,16 +128,17 @@ header .nav-item.active {
 
 
 /* ___________  Main Body  ____________ */
-main {
+.main {
     margin-left: 280px;
     margin-top: 65px;
-    transition: .1s linear
+    transition: .2s linear
 }
 
 .my-card.body-card {
     max-width: 800px;
     margin: 100px auto;
     padding: 50px;
+    box-shadow: var(--shadow-2);
 }
 
 .my-card.body-card .my-input-control {
@@ -168,7 +169,6 @@ header.active {
 
 }
 
-main.active {
+.main.active {
     margin-left: 0;
-    width: 100%;
 }

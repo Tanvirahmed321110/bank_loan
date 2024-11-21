@@ -1,0 +1,15 @@
+.login-page {
+    height: 100dvh;
+    background-color: #f8f6f6;
+}
+
+.login-page .my-card {
+    width: 400px;
+    min-height: 500px;
+    border-radius: 12px;
+    padding-top: 40px;
+}
+
+.login-page .taka-icon {
+    width: 100px;
+}

@@ -1,0 +1,7 @@
+@import './variable.css';
+@import './customClass.css';
+
+
+/* _________ All Pages  _________ */
+@import './pages/home.css';
+@import './pages/login.css'

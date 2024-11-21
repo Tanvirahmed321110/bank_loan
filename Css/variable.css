@@ -1,0 +1,71 @@
+/* Font Cnd */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Remix icon cnd */
+@import url('https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css');
+@import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
+
+
+
+
+:root {
+    /*______  Color  ______ */
+    --gray: #767676;
+    --dark-gray: #989191;
+    --dark: #303248df;
+    --green: #0ba053;
+    --green-dark: #058d44;
+    --orange: #f05224;
+    --red: #f00b0b;
+    --title-icon-color: #efa900;
+    --white: #fff;
+    --white-off: #f1f1f1;
+    --white-off2: #f1dddd;
+    --white-off3: #b2a1a1;
+    --purple: #3c3c4e;
+    --purple-dark: #21243d;
+    --navy: #113f67;
+    --navy-2: #113657ec;
+    --blue: #496fa8;
+    --sky: #6F2CF6;
+    --gray-off: #d8dae1;
+
+
+
+    /*______  Font Size  ______ */
+    --fs-xs: 11px;
+    --fs-sm: 14px;
+    --fs-md: 16px;
+    --fs-lg: 18px;
+    --fs-xl: 24px;
+    --fs-xxl: 34px;
+    --fs-xxxl: 46px;
+
+
+
+    /*______  Font Weight  ______ */
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+
+
+    --font-montserrat: "Montserrat", system-ui;
+    --font-inter: "Open Sans", sans-serif;
+
+    --gradient-1: linear-gradient(to right, #0b3958, #185a86);
+    --gradient-2: linear-gradient(to right, #11354d, #1c577e);
+    --gradient-login: linear-gradient(to right, #173e57c9, #919fa7d6);
+
+
+    /* shadow */
+    --shadow-0: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    --shadow-1: 0 2px 3px rgba(0, 0, 0, .04);
+    --shadow-2: 0 2px 5px rgba(0, 0, 0, .07);
+
+
+
+    /* _______________  bg color in section _______________ */
+
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="../Css/allCss.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="header-area">
+                <nav class="my-flex-between">
+                    <div>
+                        <div class="menu-btn-area">
+                            <button id="menu-btn" class="menu-btn my-flex-center"><i class="ri-menu-line"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- pages -->
+                    <ul class="my-d-flex my-align-end">
+                        <li><a class="nav-item active" href="#">Home</a></li>
+                        <li><a class="nav-item " href="#">File Creation</a></li>
+                        <li><a class="nav-item" href="#">Borrower Verification</a></li>
+                        <li><a class="nav-item" href="#">Garanter Verification</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <!-- ______________  Sidebar Start  ______________ -->
+        <div class="sidebar">
+            <div class="logo">
+                <div class="my-title my-text-white">LOGO </div>
+            </div>
+
+            <div class="sidebar-wrapper">
+                <div class="sidebar-area">
+                    <div class="sidebar-nav">
+                        <ul>
+                            <li>
+                                <a href="#" class="my-d-flex my-gap-5 my-align-center nav-item">
+                                    <span class="my-fw-bold my-fs-lg">&rightarrow;</span>
+                                    Loan File Creation
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="my-d-flex my-gap-5 my-align-center nav-item">
+                                    <span class="my-fw-bold my-fs-lg">&rightarrow;</span>
+                                    Borrower in Customer
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="my-d-flex my-gap-5 my-align-center nav-item">
+                                    <span class="my-fw-bold my-fs-lg">&rightarrow;</span>
+                                    Customer Garrantor Verification
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="my-d-flex my-gap-5 my-align-center nav-item">
+                                    <span class="my-fw-bold my-fs-lg">&rightarrow;</span>
+                                    Garrantor Verification
+                                </a>
+                            </li>
+                            <li class="dropdown-btn-main">
+                                <a href="#" class="my-flex-between nav-item report dropdown-btn">
+                                    Report
+                                    <span class="my-fs-lg icon"><i class="ri-arrow-right-s-fill"></i></span>
+                                </a>
+
+
+                                <!-- Dropdown -->
+                                <div class="dropdown">
+                                    <ul>
+                                        <li>
+                                            <a href="#"
+                                                class="my-d-flex my-gap-5 my-align-center nav-item"><span>&rightarrow;</span>
+                                                Verification Application
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="my-d-flex my-gap-5 my-align-center nav-item"><span>&rightarrow;</span>
+                                                Verification List
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="my-d-flex my-gap-5 my-align-center nav-item"><span>&rightarrow;</span>
+                                                Verification Pending List
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="my-d-flex my-gap-5 my-align-center nav-item"><span>&rightarrow;</span>
+                                                Verification Approval List
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <main>
+            <section class="my-flex-center">
+                <div class="body-card my-card ">
+                    <div class="my-title my-fw-bold">Biometric Loan Grantor Verification</div>
+
+                    <form action="#" class="my-mt-50">
+                        <div class="my-input-control">
+                            <label for="file-no">Loan File No:</label>
+                            <input type="text" id="file-no">
+                        </div>
+                        <div class="my-input-control my-mt-6">
+                            <label for="file-no">CIF No:</label>
+                            <input type="text" id="file-no">
+                        </div>
+
+                        <button class="my-btn my-bg-green   my-mt-6 my-w-100 ripple">Next Step</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+
+
+        <!-- js -->
+        <script src="../Js/app.js"></script>
+    </body>
+
+</html>

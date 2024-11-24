@@ -780,6 +780,10 @@ input[type="checkbox"]:focus {
     border-radius: 12px;
 }
 
+.my-radius-pill {
+    border-radius: 40px;
+}
+
 .my-radius-round {
     border-radius: 50%;
 }

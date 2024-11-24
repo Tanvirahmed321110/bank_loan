@@ -4,4 +4,5 @@
 
 /* _________ All Pages  _________ */
 @import './pages/home.css';
-@import './pages/login.css'
+@import './pages/login.css';
+@import './pages/borrowerVerificationData.css'

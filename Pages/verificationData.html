@@ -110,29 +110,43 @@
 
 
         <main class="main">
-            <section class="my-flex-center">
-                <div class="body-card my-card ">
-                    <div class="my-title my-fw-bold my-text-center">Borrower Verification</div>
+            <section class="my-flex-center my-flex-column data-page">
+                <div class="body-card my-card data">
+                    <div class="my-title my-fw-bold my-text-center">Information</div>
 
-                    <form action="#" class="my-mt-65">
-                        <div class="my-input-control">
-                            <label for="file-no">Loan File No:</label>
-                            <input type="text" id="file-no">
+                    <div class="my-flex-between my-mt-50 verification-data my-gap-30 my-align-start">
+                        <ul class=" my-flex-column my-gap-10">
+                            <li class="my-d-flex my-gap-10">
+                                <div class="my-fw-bold">Name:</div>
+                                <span>Md Tanvir Ahamed</span>
+                            </li>
+                            <li class="my-d-flex my-gap-10">
+                                <div class="my-fw-bold">Account:</div>
+                                <span>1224 4554 5654</span>
+                            </li>
+                            <li class="my-d-flex my-gap-10">
+                                <div class="my-fw-bold">NID:</div>
+                                <span>1224 4554 5654</span>
+                            </li>
+                            <li class="my-d-flex my-gap-10">
+                                <div class="my-fw-bold">Date of Birth:</div>
+                                <span>02 Jan 2000</span>
+                            </li>
+                        </ul>
+
+                        <!-- image -->
+                        <div class="image-wrapper">
+                            <img class="image"
+                                src="https://media.istockphoto.com/id/1176772006/photo/portrait-of-man-looking-at-camera-over-white-background.jpg?s=2048x2048&w=is&k=20&c=97cePV3Jt7NTdezHtkA2FC6yW0k1UrPynTdvWPlXI04="
+                                alt="profile image">
                         </div>
+                    </div>
+                </div>
 
-                        <div class="my-input-control my-mt-6">
-                            <label for="file-no">Application/Garanter:</label>
-                            <input type="text" id="file-no">
-                        </div>
-
-                        <div class="my-input-control my-mt-6">
-                            <label for="file-no">CIF No:</label>
-                            <input type="text" id="file-no">
-                        </div>
-
-                        <a href="./garantorVerificationData.html"
-                            class="my-btn my-bg-green   my-mt-6 my-w-100 ripple">Check</a>
-                    </form>
+                <!-- button -->
+                <div class="review-btn">
+                    <a href="./verifiedData.html"
+                        class="my-mt-0 my-radius-pill my-w-100 my-btn ripple my-bg-green">Verification</a>
                 </div>
             </section>
         </main>

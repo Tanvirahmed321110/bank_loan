@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
+        <title>Customer Garantor Verification</title>
         <link rel="stylesheet" href="../Css/allCss.css">
     </head>
 
@@ -20,10 +20,10 @@
 
                     <!-- pages -->
                     <ul class="my-d-flex my-align-end">
-                        <li><a class="nav-item active" href="#">Home</a></li>
-                        <li><a class="nav-item" href="./home.html">File Creation</a></li>
-                        <li><a class="nav-item" href="./verificationInput.html">Borrower Verification</a></li>
-                        <li><a class="nav-item" href="./verificationInput.html">Garanter Verification</a></li>
+                        <li><a class="nav-item " href="./home.html">Home</a></li>
+                        <li><a class="nav-item " href="./home.html">File Creation</a></li>
+                        <li><a class="nav-item active" href="./borrowerVerification.html">Borrower Verification</a></li>
+                        <li><a class="nav-item " href="./garantorVerification.html">Garanter Verification</a></li>
                     </ul>
                 </nav>
             </div>
@@ -33,7 +33,7 @@
         <!-- ______________  Sidebar Start  ______________ -->
         <div class="sidebar">
             <div class="logo">
-                <div class="my-title my-text-white">LOGO</div>
+                <div class="my-title my-text-white">LOGO </div>
             </div>
 
             <div class="sidebar-wrapper">
@@ -41,25 +41,28 @@
                     <div class="sidebar-nav">
                         <ul>
                             <li>
-                                <a href="./home.html" class="my-d-flex my-gap-5 my-align-center nav-item active">
+                                <a href="./home.html" class="my-d-flex my-gap-5 my-align-center nav-item">
                                     <span class="my-fw-bold my-fs-lg">&rightarrow;</span>
                                     Loan File Creation
                                 </a>
                             </li>
                             <li>
-                                <a href="./verificationInput.html" class="my-d-flex my-gap-5 my-align-center nav-item">
+                                <a href="./grantor/garantorCustomerVerificationData.html"
+                                    class="my-d-flex my-gap-5 my-align-center nav-item">
                                     <span class="my-fw-bold my-fs-lg">&rightarrow;</span>
                                     Borrower in Customer
                                 </a>
                             </li>
                             <li>
-                                <a href="./verificationInput.html" class="my-d-flex my-gap-5 my-align-center nav-item">
+                                <a href="./grantor/garantorCustomerVerificationData.html"
+                                    class="my-d-flex my-gap-5 my-align-center nav-item">
                                     <span class="my-fw-bold my-fs-lg">&rightarrow;</span>
                                     Customer Garrantor Verification
                                 </a>
                             </li>
                             <li>
-                                <a href="./verificationInput.html" class="my-d-flex my-gap-5 my-align-center nav-item">
+                                <a href="./garantorVerification.html"
+                                    class="my-d-flex my-gap-5 my-align-center nav-item">
                                     <span class="my-fw-bold my-fs-lg">&rightarrow;</span>
                                     Garrantor Verification
                                 </a>
@@ -110,23 +113,49 @@
 
 
         <main class="main">
-            <section class="my-flex-center">
-                <div class="body-card my-card ">
-                    <div class="my-title my-fw-bold my-text-center">Loan File Creation</div>
+            <section class="my-flex-center my-flex-column data-page">
+                <div class="body-card my-card data">
+                    <div class="my-title my-fw-bold my-text-center">Borrower Information</div>
 
-                    <form action="#" class="my-mt-65">
-                        <div class="my-input-control">
-                            <label for="file-no">Loan File No:</label>
-                            <input type="text" id="file-no">
-                        </div>
-                        <div class="my-input-control my-mt-6">
-                            <label for="file-no">CIF No:</label>
-                            <input type="text" id="file-no">
-                        </div>
+                    <div class="my-flex-between my-mt-50 verification-data my-gap-30 my-align-start">
+                        <ul class=" my-flex-column my-gap-10">
+                            <li class="my-d-flex my-gap-10">
+                                <div class="my-fw-bold">Name:</div>
+                                <span>Md Tanvir Ahamed</span>
+                            </li>
+                            <li class="my-d-flex my-gap-10">
+                                <div class="my-fw-bold">NID:</div>
+                                <span>0145554455</span>
+                            </li>
+                            <li class="my-d-flex my-gap-10">
+                                <div class="my-fw-bold">Date of Birth:</div>
+                                <span>10th Jan 2001</span>
+                            </li>
+                            <li class="my-d-flex my-gap-10">
+                                <div class="my-fw-bold">Address:</div>
+                                <div>house 12, block A, mirpur 6,dhaka,bangladesh</div>
+                            </li>
+                            <li class="my-d-flex my-gap-10">
+                                <div class="my-fw-bold">Status:</div>
+                                <div class="my-flex-center my-gap-5"> NID Verified <i
+                                        class="ri-shield-check-fill my-fs-lg my-text-green"></i>
+                                </div>
+                            </li>
+                        </ul>
 
-                        <a href="./typeOfCustomer.html" class="my-btn my-bg-green   my-mt-6 my-w-100 ripple">Next
-                            Step</a>
-                    </form>
+                        <!-- image -->
+                        <div class="image-wrapper">
+                            <img class="image"
+                                src="https://media.istockphoto.com/id/1176772006/photo/portrait-of-man-looking-at-camera-over-white-background.jpg?s=2048x2048&w=is&k=20&c=97cePV3Jt7NTdezHtkA2FC6yW0k1UrPynTdvWPlXI04="
+                                alt="profile image">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- button -->
+                <div class="review-btn">
+                    <a href="./fingerPrint.html"
+                        class="my-mt-0 my-radius-pill my-w-100 my-btn ripple my-bg-green">Biometric Verification</a>
                 </div>
             </section>
         </main>
@@ -134,7 +163,6 @@
 
 
         <!-- js -->
-        <script src="../Js/utlitis.js"></script>
         <script src="../Js/app.js"></script>
     </body>
 

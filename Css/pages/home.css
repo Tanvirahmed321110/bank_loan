@@ -146,7 +146,8 @@ header .nav-item.active {
     position: relative;
 }
 
-.my-card.body-card .my-input-control label {
+.my-card.body-card .my-input-control label,
+.login-form .my-input-control label {
     position: absolute;
     top: -9px;
     left: 25px;

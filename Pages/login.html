@@ -9,7 +9,6 @@
     </head>
 
     <body class="login-page my-flex-center my-h-100">
-
         <!-- Login Card -->
         <div class="my-card  my-p-4">
             <div class="my-flex-column  my-align-center my-gap-20">
@@ -18,18 +17,22 @@
             </div>
 
             <!-- form -->
-            <form action="#" class="my-mt-50">
-                <div class="my-input-control ">
-                    <input type="text" placeholder="User ID">
+            <form action="#" class="my-mt-50 my-pt-2 login-form">
+
+                <div class="my-input-control my-p-relative">
+                    <label for="file-no">User ID</label>
+                    <input type="text">
                     <div class="error-message">invalid id</div>
                 </div>
 
-                <div class="my-input-control   my-mt-5">
-                    <input type="text" placeholder="Password">
+                <div class="my-input-control my-mt-6 my-p-relative">
+                    <label for="file-no">Password</label>
+                    <input type="password">
                     <div class="error-message">invalid Password</div>
                 </div>
 
-                <div class="my-mt-5">
+
+                <div class="my-mt-6">
                     <button onclick="pageF('./home.html')" class="my-btn ripple my-bg-green my-w-100">LOGIN</button>
                 </div>
             </form>

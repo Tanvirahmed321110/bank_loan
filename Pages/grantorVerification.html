@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Borrower Finger Print Output</title>
+        <title>grantorVerification</title>
         <link rel="stylesheet" href="../Css/allCss.css">
     </head>
 
@@ -21,9 +21,9 @@
                     <!-- pages -->
                     <ul class="my-d-flex my-align-end">
                         <li><a class="nav-item " href="#">Home</a></li>
-                        <li><a class="nav-item " href="#">File Creation</a></li>
-                        <li><a class="nav-item active" href="#">Borrower Verification</a></li>
-                        <li><a class="nav-item" href="#">Garanter Verification</a></li>
+                        <li><a class="nav-item " href="./home.html">File Creation</a></li>
+                        <li><a class="nav-item" href="#">Borrower Verification</a></li>
+                        <li><a class="nav-item active" href="./grantorVerification.html">Garanter Verification</a></li>
                     </ul>
                 </nav>
             </div>
@@ -41,7 +41,7 @@
                     <div class="sidebar-nav">
                         <ul>
                             <li>
-                                <a href="#" class="my-d-flex my-gap-5 my-align-center nav-item">
+                                <a href="./home.html" class="my-d-flex my-gap-5 my-align-center nav-item">
                                     <span class="my-fw-bold my-fs-lg">&rightarrow;</span>
                                     Loan File Creation
                                 </a>
@@ -109,26 +109,19 @@
 
 
 
-        <!-- main body -->
         <main class="main">
-            <section class="my-flex-center my-flex-column data-page">
-                <div class="body-card my-card data">
-                    <div class="my-title my-fw-bold my-text-center">Borrower Finger Print</div>
+            <section class="my-flex-center">
+                <div class="body-card my-card ">
+                    <div class="my-title my-fw-bold my-text-center">Grantor Verification</div>
 
-                    <div class="my-flex-between my-mt-50 verification-data my-gap-30 my-align-start">
-
-
-                        <!-- image -->
-                        <div class=" my-text-center">
-                            <img class="my-text-center finger-image" src="../images/finger image.png" alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- button -->
-                <div class="review-btn">
-                    <a href="../Pages/borrwoerFingerPrintVerified.html"
-                        class="my-mt-0 my-radius-pill my-w-100 my-btn ripple my-bg-green">Submit</a>
+                    <form action="#" class="my-mt-65">
+                        <select name="" id="navigation-select">
+                            <option>Select One</option>
+                            <option value="borrwerVerificationData.html">Borrower</option>
+                            <option value="borrwerVerificationData.html">Guarantor Customer</option>
+                            <option value="borrwerVerificationData.html">Guarantor</option>
+                        </select>
+                    </form>
                 </div>
             </section>
         </main>
@@ -137,6 +130,15 @@
 
         <!-- js -->
         <script src="../Js/app.js"></script>
+        <script>
+            document.getElementById('navigation-select').addEventListener('change', function () {
+                const selectValue = this.value
+
+                if (selectValue) {
+                    window.location.href = selectValue
+                }
+            })
+        </script>
     </body>
 
 </html>

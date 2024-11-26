@@ -20,10 +20,11 @@
 
                     <!-- pages -->
                     <ul class="my-d-flex my-align-end">
-                        <li><a class="nav-item " href="./home.html">Home</a></li>
-                        <li><a class="nav-item " href="./home.html">File Creation</a></li>
-                        <li><a class="nav-item active" href="verificationInput.html">Borrower Verification</a></li>
-                        <li><a class="nav-item" href="verificationInput.html">Garanter Verification</a></li>
+                        <li><a class="nav-item active" href="#">Home</a></li>
+                        <li><a class="nav-item" href="./home.html">File Creation</a></li>
+                        <li><a class="nav-item" href="./verificationInput.html">Borrower Verification</a></li>
+                        <li><a class="nav-item" href="./grantor/garantorVerificationInput.html">Garanter
+                                Verification</a></li>
                     </ul>
                 </nav>
             </div>
@@ -33,7 +34,7 @@
         <!-- ______________  Sidebar Start  ______________ -->
         <div class="sidebar">
             <div class="logo">
-                <div class="my-title my-text-white">LOGO </div>
+                <div class="my-title my-text-white">LOGO</div>
             </div>
 
             <div class="sidebar-wrapper">
@@ -41,25 +42,26 @@
                     <div class="sidebar-nav">
                         <ul>
                             <li>
-                                <a href="#" class="my-d-flex my-gap-5 my-align-center nav-item">
+                                <a href="./home.html" class="my-d-flex my-gap-5 my-align-center nav-item active">
                                     <span class="my-fw-bold my-fs-lg">&rightarrow;</span>
                                     Loan File Creation
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="my-d-flex my-gap-5 my-align-center nav-item">
+                                <a href="./verificationInput.html" class="my-d-flex my-gap-5 my-align-center nav-item">
                                     <span class="my-fw-bold my-fs-lg">&rightarrow;</span>
                                     Borrower in Customer
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="my-d-flex my-gap-5 my-align-center nav-item">
+                                <a href="./verificationInput.html" class="my-d-flex my-gap-5 my-align-center nav-item">
                                     <span class="my-fw-bold my-fs-lg">&rightarrow;</span>
                                     Customer Garrantor Verification
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="my-d-flex my-gap-5 my-align-center nav-item">
+                                <a href="./grantor/garantorVerificationInput.html"
+                                    class="my-d-flex my-gap-5 my-align-center nav-item">
                                     <span class="my-fw-bold my-fs-lg">&rightarrow;</span>
                                     Garrantor Verification
                                 </a>
@@ -112,7 +114,13 @@
         <!-- main body -->
         <main class="main">
             <section class="my-flex-center my-flex-column data-page">
-                <div class="body-card my-card data">
+
+                <!-- spinner -->
+                <div class="spinner"></div>
+
+
+                <!-- data -->
+                <div class="body-card my-card data my-d-none">
                     <div class="my-title my-fw-bold my-text-center">Borrower Finger Print</div>
 
                     <div class="my-flex-between my-mt-50 verification-data my-gap-30 my-align-start">
@@ -131,32 +139,38 @@
 
 
 
-        <!-- Modal -->
+        <!-- notification -->
         <div class="notification finger-page my-flex-center">
             <div class="notification-content">
-                <div class="my-title">Success</div>
+                <div class="my-title my-text-white">Success</div>
                 <div class="my-mt-6">
                     <img class="my-w-100" src="../images/checkmark.png" alt="check mark">
                 </div>
             </div>
         </div>
 
-        <script>
+        <!-- js -->
+        <script src="../Js/app.js"></script>
+
+        <script type="module">
+            import showContentHideSpinner from '../Js/utlitis.js';
+
             function showNotification() {
                 const notification = document.querySelector('.notification');
-                notification.classList.add('active'); // Add the "active" class to move it to 50px
+                notification.classList.add('active');
 
-                // Remove the notification after 3 seconds
                 setTimeout(() => {
                     notification.classList.remove('active');
                 }, 3000);
             }
 
-            // Call the function when the page loads
-            window.onload = showNotification;</script>
 
-        <!-- js -->
-        <script src="../Js/app.js"></script>
+            window.onload = function () {
+                showContentHideSpinner('.spinner', '.body-card', 2000);
+                showContentHideSpinner()
+                setTimeout(showNotification, 2000);
+            };
+        </script>
     </body>
 
 </html>

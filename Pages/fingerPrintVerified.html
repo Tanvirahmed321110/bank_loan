@@ -155,21 +155,16 @@
         <script type="module">
             import showContentHideSpinner from '../Js/utlitis.js';
 
-            function showNotification() {
-                const notification = document.querySelector('.notification');
-                notification.classList.add('active');
 
-                setTimeout(() => {
-                    notification.classList.remove('active');
-                }, 3000);
-            }
 
 
             window.onload = function () {
                 showContentHideSpinner('.spinner', '.body-card', 2000);
                 showContentHideSpinner()
-                setTimeout(showNotification, 2000);
             };
+            setTimeout(() => {
+                window.location.href = 'home.html'; // Replace 'index.html' with the path to your homepage
+            }, 6000);
         </script>
     </body>
 

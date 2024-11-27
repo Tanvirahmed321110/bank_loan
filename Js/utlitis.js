@@ -13,7 +13,7 @@ function showContentHideSpinner(spinner, data, delay) {
 }
 
 window.onload = function () {
-    showContentHideSpinner('.spinner', '.body-card', 2000)
+    showContentHideSpinner('.loader', '.body-card', 2000)
 }
 
 
